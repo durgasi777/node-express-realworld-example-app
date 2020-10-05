@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~
+git clone https://github.com/durgasi777/node-express-realworld-example-app.git
+cd node-express-realworld-example-app
+sed -i 's;mongodb://localhost/conduit;mongo:27017/mongocrud;g' app.js
+docker-compose up -d
